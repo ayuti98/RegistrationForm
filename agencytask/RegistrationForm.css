@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #444040;
+     font-family: 'Poppins', sans-serif;
+}
+
+
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: rgb(255, 166, 0);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color:rgba(15, 3, 44, 7);
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: rgba(15, 3, 44, 7);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+
+
+
+
+body {
+ font-family: Verdana, Geneva, sans-serif;
+ font-size: 14px;
+ background-image: url(image/form-Background.jpg);
+ background-position:center;
+ background-size:cover;
+}
+.wrapper {
+    background-color:  rgb(0,0,0,0.5);
+    width:500px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 5px solid #f5ba1a;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    
+}
+.wrapper h2{
+    background-color:rgb(0,0,0,0.6);
+    color:#FFFFFF;
+    border-radius:15px 15px 15px 15px ;
+    font-size: 32px;
+    line-height: 70px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.input-name{
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+    
+}
+
+.name{
+    width: 45%;
+    padding:8px 0 8px 40px;
+}
+
+.areacode{
+    width: 25%;
+    padding:8px 0 8px 40px;
+}
+
+.contact{
+    width: 65%;
+    padding:8px 0 8px 40px;
+}
+
+.input-name span{
+    margin-left: 35px;
+    
+}
+.text-name{
+    width: 100%;
+    padding:8px 0 8px 40px;
+  
+}
+
+.email{
+    padding: 8px;
+   
+}
+
+.text-name, .name, .areacode, .contact, .roleintrusted{
+    border: 1px solid #cccccc;
+    outline: none;
+    -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      transition: all 0.30s ease-in-out;
+}
+
+.text-name:hover, .name:hover{
+    background-color: #fafafa;
+}
+
+
+.text-name:focus, .name:focus, .areacode:focus, .contact:focus, .roleintruste:focus{
+    -webkit-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+      -moz-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+      box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+      border: 2px solid #f5ba1a;
+      background: #fafafa;
+}
+
+.radio-button{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    color: #fafafa;
+  }
+
+ .gender {
+    margin-right: 1em;
+    color: #fafafa;
+}
+.gender:before {
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 100%;
+    vertical-align: -3px;
+    border: 2px solid #cccccc;
+    padding: 0.15em;
+    background-color: transparent;
+    background-clip: content-box;
+    transition: all 0.2s ease;
+  }
+
+  .radio-button:hover + .gender:before {
+    border-color:rgb(248, 245, 58);
+  }
+  .radio-button:checked + .gender:before {
+    background-color:rgb(240, 166, 8);
+    border-color:   rgb(248, 245, 58);
+  }
+
+  .roleintrusted{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 0px 15px;
+    cursor: pointer;
+    color: #7b7b7b;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: all 0.2s ease;
+}
+.roleintrusted::-ms-expand{
+    display: none;
+}
+.roleintrusted:hover, .roleintrusted:focus{
+      color: #000;
+      background: #fafafa;
+      border-color: #000;
+      outline: none;
+}
+.arrow {
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0 5px;
+    border-style: solid;
+    border-color: #7b7b7b transparent transparent transparent;
+ }
+  
+.roleintrusted:hover +.arrow, .roleintrusted:focus +.arrow{
+      border-top-color: #000;
+}
+
+ 
+  .button{
+    background-color: rgba(0, 255, 255, 0.616);
+    display:block;
+    text-align:center;
+    height: 45px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius:12px;
+    border:2px solid #727336;
+     
+    
+  }
+  .button:hover{
+    background-color:#db9616;
+  
+  }
+
+
+
+  .content1{
+    position: relative;
+    margin: 130px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .content1 .text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #202020;
+  }
+  .content1 .p{
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #202020;
+  }
+  footer{
+    margin: 50px auto 0;
+    bottom: 0px;
+    width: 100%;
+    background-color:rgb(255, 166, 0);
+  }
+  .main-content{
+    display: flex;
+  }
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  .box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+  }
+  .box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+  }
+  .left .content p{
+    text-align: justify;
+  }
+  .left .content .social{
+    margin: 20px 0 0 0;
+  }
+  .left .content .social a{
+    padding: 0 2px;
+  }
+  .left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  .left .content .social a span:hover{
+    background: #f12020;
+  }
+  .center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .center .content .fas:hover{
+    background: #f12020;
+  }
+  .center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  .center .content .phone{
+    margin: 15px 0;
+  }
+  .right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #444040;
+  }
+  .right form .msg{
+    margin-top: 10px;
+    
+  }
+  .right form input, .right form .msgForm {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #ffffff;
+    color: #444040;
+    padding-left: 10px;
+    border: 1px solid #eeeaea;
+  }
+  .right form input:focus,
+  .right form .msgForm:focus{
+    outline-color: #000000;
+    
+  }
+  .right form input{
+    height: 35px;
+  }
+  .right form .btn{
+    margin-top: 10px;
+  }
+  .right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f00707f8;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .right form .btn button:hover{
+    background: rgb(241, 53, 53);
+  }
+  
+  @media screen and (max-width: 900px) {
+    footer{
+      position: relative;
+      bottom: 0px;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box{
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+      .wrapper{
+          width: 100%;
+      }
+      .input-name{
+          margin-bottom: -10px;
+      }
+      .name{
+          width: 100%;
+          padding:8px 0 8px 40px;
+          margin-bottom: 10px;
+      }
+      .input-name span{
+          padding: 0;
+          margin:0;
+      }
+  }
+
+
