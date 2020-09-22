@@ -1,6 +1,6 @@
 # Registration Form
 # Introduction
- This is  a simple registration form created using basics of html and css. The form contains fields where you can enter your data
+Depending upon the criterias mentioned, this is  a simple registration form of company created using basics of html and css. The form contains fields where you can enter your data
 
 # Requirments
 visual studio or any text editor. <br>
